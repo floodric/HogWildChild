@@ -1,0 +1,309 @@
+
+***** RCV *****
+----- Seq -----
+
+Total running time: 15.945615s
+Error on training data: 27786/781265 = 3.556540%
+
+Error on test data: 1029/23149 = 4.445116%
+----- Naive -----
+-- Running on 2 threads. --
+
+Total running time: 25.777696s
+Error on training data: 27460/781265 = 3.514813%
+
+Error on testing data: 1039/23149 = 4.488315%
+-- Running on 4 threads. --
+
+Total running time: 20.208269s
+Error on training data: 27544/781265 = 3.525564%
+
+Error on testing data: 1011/23149 = 4.367359%
+-- Running on 8 threads. --
+
+Total running time: 19.398402s
+Error on training data: 27372/781265 = 3.503549%
+
+Error on testing data: 1023/23149 = 4.419197%
+-- Running on 12 threads. --
+
+Total running time: 20.538581s
+Error on training data: 27486/781265 = 3.518140%
+
+Error on testing data: 999/23149 = 4.315521%
+-- Running on 20 threads. --
+
+Total running time: 20.654512s
+Error on training data: 27473/781265 = 3.516476%
+
+Error on testing data: 1013/23149 = 4.375999%
+-- Running on 32 threads. --
+
+Total running time: 21.103273s
+Error on training data: 27578/781265 = 3.529916%
+
+Error on testing data: 1014/23149 = 4.380319%
+-- Running on 40 threads. --
+
+Total running time: 21.325928s
+Error on training data: 27452/781265 = 3.513789%
+
+Error on testing data: 1011/23149 = 4.367359%
+----- HogWild! -----
+-- Running on 2 threads. --
+
+Total running time: 22.232394s
+Error on training data: 27611/781265 = 3.534140%
+
+Error on testing data: 1025/23149 = 4.427837%
+-- Running on 4 threads. --
+
+Total running time: 11.768778s
+Error on training data: 27576/781265 = 3.529660%
+
+Error on testing data: 1021/23149 = 4.410558%
+-- Running on 8 threads. --
+
+Total running time: 6.289254s
+Error on training data: 27613/781265 = 3.534396%
+
+Error on testing data: 1014/23149 = 4.380319%
+-- Running on 12 threads. --
+
+Total running time: 4.270797s
+Error on training data: 27569/781265 = 3.528764%
+
+Error on testing data: 992/23149 = 4.285282%
+-- Running on 20 threads. --
+
+Total running time: 3.639805s
+Error on training data: 27663/781265 = 3.540796%
+
+Error on testing data: 1021/23149 = 4.410558%
+-- Running on 32 threads. --
+
+Total running time: 3.783016s
+Error on training data: 27596/781265 = 3.532220%
+
+Error on testing data: 1008/23149 = 4.354400%
+-- Running on 40 threads. --
+
+Total running time: 3.730396s
+Error on training data: 27620/781265 = 3.535292%
+
+Error on testing data: 1001/23149 = 4.324161%
+----- HogWildChild! -----
+-- Running on 2 threads. --
+
+0.000000% columns passed threshold
+0.000000% column accesses above threshold
+Total running time: 22.424156s
+Error on training data: 27696/781265 = 3.545020%
+
+Error on testing data: 1008/23149 = 4.354400%
+-- Running on 4 threads. --
+
+0.019053% columns passed threshold
+3.814342% column accesses above threshold
+Total running time: 11.844276s
+Error on training data: 27657/781265 = 3.540028%
+
+Error on testing data: 1011/23149 = 4.367359%
+-- Running on 8 threads. --
+
+0.152426% columns passed threshold
+17.943101% column accesses above threshold
+Total running time: 6.511540s
+Error on training data: 27600/781265 = 3.532732%
+
+Error on testing data: 1010/23149 = 4.363039%
+-- Running on 12 threads. --
+
+0.306969% columns passed threshold
+27.870648% column accesses above threshold
+Total running time: 5.496171s
+Error on training data: 27636/781265 = 3.537340%
+
+Error on testing data: 998/23149 = 4.311201%
+-- Running on 12 threads. --
+
+0.306969% columns passed threshold
+27.870648% column accesses above threshold
+Total running time: 5.501063s
+Error on training data: 27535/781265 = 3.524412%
+
+Error on testing data: 1036/23149 = 4.475355%
+-- Running on 20 threads. --
+
+0.666864% columns passed threshold
+42.294471% column accesses above threshold
+Total running time: 4.336434s
+Error on training data: 27667/781265 = 3.541308%
+
+Error on testing data: 1017/23149 = 4.393278%
+-- Running on 32 threads. --
+
+1.126260% columns passed threshold
+53.398555% column accesses above threshold
+Total running time: 7.618909s
+Error on training data: 27559/781265 = 3.527484%
+
+Error on testing data: 1030/23149 = 4.449436%
+-- Running on 40 threads. --
+
+1.418410% columns passed threshold
+58.506795% column accesses above threshold
+Total running time: 7.374173s
+Error on training data: 27664/781265 = 3.540924%
+
+Error on testing data: 1009/23149 = 4.358720%
+***** WIKI *****
+----- Seq -----
+
+Total running time: 11.150691s
+Error on training data: 3136/159752 = 1.963043%
+
+Error on test data: 390/17750 = 2.197183%
+----- Naive -----
+-- Running on 2 threads. --
+
+Total running time: 10.668338s
+Error on training data: 3113/159752 = 1.948645%
+
+Error on testing data: 391/17750 = 2.202817%
+-- Running on 4 threads. --
+
+Total running time: 7.234683s
+Error on training data: 3138/159752 = 1.964295%
+
+Error on testing data: 393/17750 = 2.214085%
+-- Running on 8 threads. --
+
+Total running time: 5.320009s
+Error on training data: 3122/159752 = 1.954279%
+
+Error on testing data: 395/17750 = 2.225352%
+-- Running on 12 threads. --
+
+Total running time: 5.176203s
+Error on training data: 3122/159752 = 1.954279%
+
+Error on testing data: 390/17750 = 2.197183%
+-- Running on 20 threads. --
+
+Total running time: -34599.872200s
+Error on training data: 3148/159752 = 1.970554%
+
+Error on testing data: 388/17750 = 2.185915%
+-- Running on 32 threads. --
+
+Total running time: 5.829052s
+Error on training data: 3132/159752 = 1.960539%
+
+Error on testing data: 393/17750 = 2.214085%
+-- Running on 40 threads. --
+
+Total running time: 5.686840s
+Error on training data: 3136/159752 = 1.963043%
+
+Error on testing data: 394/17750 = 2.219718%
+----- HogWild! -----
+-- Running on 2 threads. --
+
+Total running time: 10.163912s
+Error on training data: 3162/159752 = 1.979318%
+
+Error on testing data: 396/17750 = 2.230986%
+-- Running on 4 threads. --
+
+Total running time: 5.770329s
+Error on training data: 3111/159752 = 1.947393%
+
+Error on testing data: 394/17750 = 2.219718%
+-- Running on 8 threads. --
+
+Total running time: 2.973669s
+Error on training data: 3135/159752 = 1.962417%
+
+Error on testing data: 390/17750 = 2.197183%
+-- Running on 12 threads. --
+
+Total running time: 1.841004s
+Error on training data: 3135/159752 = 1.962417%
+
+Error on testing data: 395/17750 = 2.225352%
+-- Running on 20 threads. --
+
+Total running time: 1.857281s
+Error on training data: 3179/159752 = 1.989959%
+
+Error on testing data: 391/17750 = 2.202817%
+-- Running on 32 threads. --
+
+Total running time: 1.894892s
+Error on training data: 3152/159752 = 1.973058%
+
+Error on testing data: 397/17750 = 2.236620%
+-- Running on 40 threads. --
+
+Total running time: 1.962850s
+Error on training data: 3164/159752 = 1.980570%
+
+Error on testing data: 392/17750 = 2.208451%
+----- HogWildChild! -----
+-- Running on 2 threads. --
+
+0.002057% columns passed threshold
+1.150066% column accesses above threshold
+Total running time: 10.485534s
+Error on training data: 3155/159752 = 1.974936%
+
+Error on testing data: 394/17750 = 2.219718%
+-- Running on 4 threads. --
+
+0.031200% columns passed threshold
+10.969249% column accesses above threshold
+Total running time: 5.284504s
+Error on training data: 3217/159752 = 2.013746%
+
+Error on testing data: 388/17750 = 2.185915%
+-- Running on 8 threads. --
+
+0.134059% columns passed threshold
+29.109270% column accesses above threshold
+Total running time: 3.306858s
+Error on training data: 3172/159752 = 1.985578%
+
+Error on testing data: 388/17750 = 2.185915%
+-- Running on 12 threads. --
+
+0.234860% columns passed threshold
+39.809101% column accesses above threshold
+Total running time: 2.795376s
+Error on training data: 3193/159752 = 1.998723%
+
+Error on testing data: 387/17750 = 2.180282%
+-- Running on 20 threads. --
+
+0.414862% columns passed threshold
+51.559824% column accesses above threshold
+Total running time: 2.284808s
+Error on training data: 3176/159752 = 1.988082%
+
+Error on testing data: 394/17750 = 2.219718%
+-- Running on 32 threads. --
+
+0.648694% columns passed threshold
+61.165949% column accesses above threshold
+Total running time: 2.800546s
+Error on training data: 3207/159752 = 2.007487%
+
+Error on testing data: 387/17750 = 2.180282%
+-- Running on 40 threads. --
+
+0.780353% columns passed threshold
+64.973453% column accesses above threshold
+Total running time: 2.870171s
+Error on training data: 3205/159752 = 2.006235%
+
+Error on testing data: 394/17750 = 2.219718%

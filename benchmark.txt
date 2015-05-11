@@ -1,0 +1,225 @@
+Benchmark:
+
+RCV Data:
+Training Size: 781265
+Testing Size: 23149
+Algo	20Ep(s)	Speedup	Train	Test	Cols Over	Accesses Over
+Seq	13.184	1x	3.55%	4.45%
+Naive	7.245	1.82	3.50%	4.26%
+HogWild	3.046	4.33	3.54%	4.37%
+Child	3.251	4.06	3.53%	4.37%	0.306969%	27.87%
+
+Germ/Port:
+Training Size: 159752
+Testing Size: 17750
+Algo	20Ep(s)	Speedup	Train	Test	Cols Over	Accesses Over
+Seq	9.440	1x	1.96%	2.20%
+Naive	2.195	4.30	1.96%	2.22%
+HogWild	1.621	5.82	1.98%	2.20%
+Child	1.864	5.06	2.00%	2.20%	0.234860%	39.81%
+
+// Seq
+Epoch 0 finished in 0.669621s; total time: 0.669621s
+Epoch 1 finished in 0.657089s; total time: 1.326710s
+Epoch 2 finished in 0.655372s; total time: 1.982082s
+Epoch 3 finished in 0.655233s; total time: 2.637315s
+Epoch 4 finished in 0.655671s; total time: 3.292986s
+Epoch 5 finished in 0.657062s; total time: 3.950047s
+Epoch 6 finished in 0.656762s; total time: 4.606809s
+Epoch 7 finished in 0.656977s; total time: 5.263787s
+Epoch 8 finished in 0.657877s; total time: 5.921664s
+Epoch 9 finished in 0.658292s; total time: 6.579956s
+Epoch 10 finished in 0.658604s; total time: 7.238560s
+Epoch 11 finished in 0.659197s; total time: 7.897757s
+Epoch 12 finished in 0.659657s; total time: 8.557414s
+Epoch 13 finished in 0.659903s; total time: 9.217317s
+Epoch 14 finished in 0.660535s; total time: 9.877852s
+Epoch 15 finished in 0.660866s; total time: 10.538718s
+Epoch 16 finished in 0.661009s; total time: 11.199727s
+Epoch 17 finished in 0.661528s; total time: 11.861256s
+Epoch 18 finished in 0.661536s; total time: 12.522792s
+Epoch 19 finished in 0.661808s; total time: 13.184600s
+Total running time: 13.184600s
+Error on training data: 27786/781265 = 3.556540%
+Error on test data: 1029/23149 = 4.445116%
+
+// Naive
+Epoch 0 finished in 0.393306s; total time: 0.393306s
+Epoch 1 finished in 0.356296s; total time: 0.749602s
+Epoch 2 finished in 0.352344s; total time: 1.101946s
+Epoch 3 finished in 0.354702s; total time: 1.456648s
+Epoch 4 finished in 0.351938s; total time: 1.808586s
+Epoch 5 finished in 0.358480s; total time: 2.167066s
+Epoch 6 finished in 0.360437s; total time: 2.527503s
+Epoch 7 finished in 0.361059s; total time: 2.888562s
+Epoch 8 finished in 0.355867s; total time: 3.244429s
+Epoch 9 finished in 0.363279s; total time: 3.607708s
+Epoch 10 finished in 0.363316s; total time: 3.971024s
+Epoch 11 finished in 0.364809s; total time: 4.335833s
+Epoch 12 finished in 0.362857s; total time: 4.698690s
+Epoch 13 finished in 0.364120s; total time: 5.062810s
+Epoch 14 finished in 0.360678s; total time: 5.423488s
+Epoch 15 finished in 0.359667s; total time: 5.783155s
+Epoch 16 finished in 0.359064s; total time: 6.142219s
+Epoch 17 finished in 0.366766s; total time: 6.508985s
+Epoch 18 finished in 0.368292s; total time: 6.877277s
+Epoch 19 finished in 0.367795s; total time: 7.245072s
+Total running time: 7.245072s
+Error on training data: 27361/781265 = 3.502141%
+Error on testing data: 985/23149 = 4.255043%
+
+// Hogwild
+Epoch 0 finished in 0.184069s; total time: 0.184069s
+Epoch 1 finished in 0.171945s; total time: 0.356014s
+Epoch 2 finished in 0.185864s; total time: 0.541879s
+Epoch 3 finished in 0.180340s; total time: 0.722219s
+Epoch 4 finished in 0.170468s; total time: 0.892687s
+Epoch 5 finished in 0.143396s; total time: 1.036083s
+Epoch 6 finished in 0.143096s; total time: 1.179179s
+Epoch 7 finished in 0.143160s; total time: 1.322338s
+Epoch 8 finished in 0.142749s; total time: 1.465087s
+Epoch 9 finished in 0.143210s; total time: 1.608297s
+Epoch 10 finished in 0.143429s; total time: 1.751726s
+Epoch 11 finished in 0.143497s; total time: 1.895223s
+Epoch 12 finished in 0.143444s; total time: 2.038667s
+Epoch 13 finished in 0.143751s; total time: 2.182418s
+Epoch 14 finished in 0.143729s; total time: 2.326146s
+Epoch 15 finished in 0.143630s; total time: 2.469777s
+Epoch 16 finished in 0.143888s; total time: 2.613665s
+Epoch 17 finished in 0.143720s; total time: 2.757385s
+Epoch 18 finished in 0.144372s; total time: 2.901757s
+Epoch 19 finished in 0.144074s; total time: 3.045831s
+Total running time: 3.045831s
+Error on training data: 27638/781265 = 3.537596%
+Error on testing data: 1012/23149 = 4.371679%
+
+// Hogwildchild
+0.306969% columns passed threshold
+27.870648% column accesses above threshold
+Epoch 0 finished in 0.169917s; total time: 0.169917s
+Epoch 1 finished in 0.161398s; total time: 0.331315s
+Epoch 2 finished in 0.160564s; total time: 0.491880s
+Epoch 3 finished in 0.160969s; total time: 0.652849s
+Epoch 4 finished in 0.160499s; total time: 0.813348s
+Epoch 5 finished in 0.161231s; total time: 0.974579s
+Epoch 6 finished in 0.161076s; total time: 1.135656s
+Epoch 7 finished in 0.161742s; total time: 1.297397s
+Epoch 8 finished in 0.162593s; total time: 1.459991s
+Epoch 9 finished in 0.161764s; total time: 1.621755s
+Epoch 10 finished in 0.162292s; total time: 1.784047s
+Epoch 11 finished in 0.162408s; total time: 1.946455s
+Epoch 12 finished in 0.163047s; total time: 2.109502s
+Epoch 13 finished in 0.162161s; total time: 2.271663s
+Epoch 14 finished in 0.162666s; total time: 2.434329s
+Epoch 15 finished in 0.162307s; total time: 2.596636s
+Epoch 16 finished in 0.163155s; total time: 2.759791s
+Epoch 17 finished in 0.163380s; total time: 2.923170s
+Epoch 18 finished in 0.164170s; total time: 3.087340s
+Epoch 19 finished in 0.163558s; total time: 3.250899s
+Total running time: 3.250899s
+Error on training data: 27584/781265 = 3.530684%
+Error on testing data: 1012/23149 = 4.371679%
+
+/********* Germ/Port **********/
+
+// Seq
+Epoch 0 finished in 0.584025s; total time: 0.584025s
+Epoch 1 finished in 0.488791s; total time: 1.072816s
+Epoch 2 finished in 0.477513s; total time: 1.550329s
+Epoch 3 finished in 0.472681s; total time: 2.023010s
+Epoch 4 finished in 0.469829s; total time: 2.492839s
+Epoch 5 finished in 0.468233s; total time: 2.961071s
+Epoch 6 finished in 0.466203s; total time: 3.427275s
+Epoch 7 finished in 0.465285s; total time: 3.892560s
+Epoch 8 finished in 0.464236s; total time: 4.356796s
+Epoch 9 finished in 0.463796s; total time: 4.820592s
+Epoch 10 finished in 0.463163s; total time: 5.283755s
+Epoch 11 finished in 0.462798s; total time: 5.746553s
+Epoch 12 finished in 0.462322s; total time: 6.208875s
+Epoch 13 finished in 0.462076s; total time: 6.670950s
+Epoch 14 finished in 0.461624s; total time: 7.132575s
+Epoch 15 finished in 0.462764s; total time: 7.595339s
+Epoch 16 finished in 0.461281s; total time: 8.056619s
+Epoch 17 finished in 0.461139s; total time: 8.517758s
+Epoch 18 finished in 0.461032s; total time: 8.978790s
+Epoch 19 finished in 0.460925s; total time: 9.439715s
+Total running time: 9.439715s
+Error on training data: 3136/159752 = 1.963043%
+Error on test data: 390/17750 = 2.197183%
+
+// Naive
+Epoch 0 finished in 0.299861s; total time: 0.299861s
+Epoch 1 finished in 0.145510s; total time: 0.445371s
+Epoch 2 finished in 0.114350s; total time: 0.559721s
+Epoch 3 finished in 0.108123s; total time: 0.667843s
+Epoch 4 finished in 0.103955s; total time: 0.771799s
+Epoch 5 finished in 0.100580s; total time: 0.872378s
+Epoch 6 finished in 0.099695s; total time: 0.972074s
+Epoch 7 finished in 0.098011s; total time: 1.070085s
+Epoch 8 finished in 0.097299s; total time: 1.167384s
+Epoch 9 finished in 0.095812s; total time: 1.263195s
+Epoch 10 finished in 0.095105s; total time: 1.358301s
+Epoch 11 finished in 0.094839s; total time: 1.453139s
+Epoch 12 finished in 0.093479s; total time: 1.546619s
+Epoch 13 finished in 0.093134s; total time: 1.639753s
+Epoch 14 finished in 0.093070s; total time: 1.732823s
+Epoch 15 finished in 0.092589s; total time: 1.825412s
+Epoch 16 finished in 0.092679s; total time: 1.918091s
+Epoch 17 finished in 0.092319s; total time: 2.010411s
+Epoch 18 finished in 0.092212s; total time: 2.102623s
+Epoch 19 finished in 0.092460s; total time: 2.195082s
+Total running time: 2.195082s
+Error on training data: 3126/159752 = 1.956783%
+Error on testing data: 394/17750 = 2.219718%
+
+// Hogwild
+Epoch 0 finished in 0.119642s; total time: 0.119642s
+Epoch 1 finished in 0.084578s; total time: 0.204220s
+Epoch 2 finished in 0.081332s; total time: 0.285552s
+Epoch 3 finished in 0.080669s; total time: 0.366220s
+Epoch 4 finished in 0.079659s; total time: 0.445879s
+Epoch 5 finished in 0.079792s; total time: 0.525672s
+Epoch 6 finished in 0.078917s; total time: 0.604589s
+Epoch 7 finished in 0.079457s; total time: 0.684046s
+Epoch 8 finished in 0.078626s; total time: 0.762672s
+Epoch 9 finished in 0.078269s; total time: 0.840941s
+Epoch 10 finished in 0.079104s; total time: 0.920045s
+Epoch 11 finished in 0.077748s; total time: 0.997793s
+Epoch 12 finished in 0.078443s; total time: 1.076236s
+Epoch 13 finished in 0.078363s; total time: 1.154599s
+Epoch 14 finished in 0.078474s; total time: 1.233073s
+Epoch 15 finished in 0.077865s; total time: 1.310938s
+Epoch 16 finished in 0.078240s; total time: 1.389178s
+Epoch 17 finished in 0.077061s; total time: 1.466239s
+Epoch 18 finished in 0.077695s; total time: 1.543934s
+Epoch 19 finished in 0.077666s; total time: 1.621601s
+Total running time: 1.621601s
+Error on training data: 3159/159752 = 1.977440%
+Error on testing data: 389/17750 = 2.191549%
+
+// Hogwildchild
+0.234860% columns passed threshold
+39.809101% column accesses above threshold
+Epoch 0 finished in 0.151103s; total time: 0.151103s
+Epoch 1 finished in 0.099475s; total time: 0.250577s
+Epoch 2 finished in 0.095981s; total time: 0.346558s
+Epoch 3 finished in 0.093069s; total time: 0.439627s
+Epoch 4 finished in 0.091215s; total time: 0.530843s
+Epoch 5 finished in 0.090436s; total time: 0.621278s
+Epoch 6 finished in 0.089602s; total time: 0.710880s
+Epoch 7 finished in 0.089639s; total time: 0.800520s
+Epoch 8 finished in 0.088513s; total time: 0.889033s
+Epoch 9 finished in 0.088638s; total time: 0.977670s
+Epoch 10 finished in 0.089687s; total time: 1.067358s
+Epoch 11 finished in 0.089396s; total time: 1.156754s
+Epoch 12 finished in 0.090087s; total time: 1.246840s
+Epoch 13 finished in 0.087485s; total time: 1.334326s
+Epoch 14 finished in 0.088723s; total time: 1.423048s
+Epoch 15 finished in 0.088329s; total time: 1.511377s
+Epoch 16 finished in 0.087439s; total time: 1.598816s
+Epoch 17 finished in 0.088841s; total time: 1.687657s
+Epoch 18 finished in 0.089194s; total time: 1.776851s
+Epoch 19 finished in 0.086988s; total time: 1.863839s
+Total running time: 1.863839s
+Error on training data: 3189/159752 = 1.996219%
+Error on testing data: 389/17750 = 2.191549%
